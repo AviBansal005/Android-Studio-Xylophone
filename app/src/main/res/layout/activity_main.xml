@@ -1,0 +1,109 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7bd3f7"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="408dp"
+        android:layout_height="670dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_red"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="6dp"
+            android:background="#FF0000"
+            android:onClick="playnote7" />
+
+        <Button
+            android:id="@+id/btn_violet"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="6dp"
+            android:background="#9400D3"
+            android:onClick="playnote1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <Button
+            android:id="@+id/btn_indigo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="#4B0082"
+            android:onClick="playnote2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <Button
+            android:id="@+id/btn_blue"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:background="#0000FF"
+            android:onClick="playnote3" />
+
+        <Button
+            android:id="@+id/btn_green"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="6dp"
+            android:background="#00FF00"
+            android:onClick="playnote4" />
+
+        <Button
+            android:id="@+id/btn_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp"
+            android:background="#FFFF00"
+            android:onClick="playnote5" />
+
+        <Button
+            android:id="@+id/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="6dp"
+            android:background="#FF7F00"
+            android:onClick="playnote6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="22dp"
+        android:includeFontPadding="true"
+        android:text="XYLOPHONE"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
